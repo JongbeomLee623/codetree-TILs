@@ -26,7 +26,7 @@ public class Main {
     }
 
     public static String getSeason(int n){
-        if(n<=2 || n>=12){
+        if(n<=2 || n==12){
             return "Winter";
         }
         else if(n>=3 || n<=5) {
@@ -43,12 +43,13 @@ public class Main {
     }
 
     public static boolean getDate(int m, int d){
-        if(m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m ==12 ){
+        if(m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m == 12 ){
             date = 31;
         }
         else if (m==4 || m==6 || m==9 || m==11){
             date = 30;
         }
+
         else if (m ==2) {
             if(leapYear) {
                 date = 29;
