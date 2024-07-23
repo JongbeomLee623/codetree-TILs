@@ -22,17 +22,7 @@ public class Main {
         Collections.sort(A);
         Collections.sort(B);
 
-        boolean flag = true;
-        for(int i=0; i<Math.max(A.size(),B.size());i++){
-            try {
-                if(A.get(i)!=B.get(i)){
-                    flag = false;
-                }
-            }
-            catch(Exception e1) {
-                flag = false;
-            }
-        }
-        System.out.print(flag?"Yes":"No");
+        
+        System.out.print(A.equals(B)?"Yes":"No");
     }
 }
