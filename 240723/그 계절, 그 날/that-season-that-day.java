@@ -32,13 +32,13 @@ public class Main {
         if(n<=2 || n==12){
             return "Winter";
         }
-        else if(n>=3 || n<=5) {
+        else if(n>=3 && n<=5) {
             return "Spring";
         }
-        else if(n>=6 || n<=8) {
+        else if(n>=6 && n<=8) {
             return "Summer";
         }
-        else if(n>=9 || n<=11) {
+        else if(n>=9 && n<=11) {
             return "Fall";
         } else {
             return "";
