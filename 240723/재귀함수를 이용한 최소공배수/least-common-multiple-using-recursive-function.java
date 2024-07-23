@@ -12,7 +12,7 @@ public class Main {
 
         int n = Integer.parseInt(br.readLine());
         arr = new int[n];
-        ans = new int[n];
+        ans = new int[n+1];
 
         st = new StringTokenizer(br.readLine());
         for(int i =0; i<n; i++){
@@ -20,11 +20,11 @@ public class Main {
             ans[i] = 1;
         }
 
-        for(int i=1; i<=n-1; i++){
+        for(int i=1; i<=n; i++){
             ans[i]=lcm(arr[i-1],ans[i-1]);
         }
 
-        System.out.print(ans[n-1]);
+        System.out.print(ans[n]);
     }
     public static int gcd(int a, int b){
         int r = a % b;
