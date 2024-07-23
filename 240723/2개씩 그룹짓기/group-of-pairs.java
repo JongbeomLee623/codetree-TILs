@@ -14,15 +14,15 @@ public class Main {
         N = Integer.parseInt(br.readLine());
 
         st = new StringTokenizer(br.readLine());
-        for(int i=0; i<N; i++){
+        for(int i=0; i<N*2; i++){
             arr.add(Integer.parseInt(st.nextToken()));
         }   
 
         int max = Integer.MIN_VALUE;
         Collections.sort(arr);
-        for(int i=0; i<N; i++){
-            int r = arr.get(i)+arr.get(N-1-i);
 
+        for(int i=0; i<N; i++){
+            int r = arr.get(i)+arr.get(arr.size()-1-i);
             if(r > max){
                 max = r;
             }
