@@ -16,7 +16,7 @@ public class Main {
         ArrayList<String> arr = new ArrayList<>();
         for(int i = 0; i<n; i++){
             String str = br.readLine();
-            if(str.contains(T)){
+            if(str.startsWith(T)){
                 arr.add(str);
             }
         }
