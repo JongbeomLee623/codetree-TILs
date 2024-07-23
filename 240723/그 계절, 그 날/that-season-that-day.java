@@ -26,10 +26,10 @@ public class Main {
     }
 
     public static String getSeason(int n){
-        if (n<=0 || n>12){
-            return "-1";
-        }
-        else if(n<=2 || n==12){
+        // if (n<=0 || n>12){
+        //     return "-1";
+        // }
+        if(n<=2 || n==12){
             return "Winter";
         }
         else if(n>=3 || n<=5) {
@@ -53,14 +53,13 @@ public class Main {
             date = 30;
         }
 
-        else if (m ==2) {
+        else if (m == 2) {
             if(leapYear) {
                 date = 29;
             } else{
                 date = 28;
             }
         }
-
         else{
             return false;
         }
