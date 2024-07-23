@@ -41,7 +41,7 @@ public class Main {
         else if(n>=9 || n<=11) {
             return "Fall";
         } else {
-            return;
+            return "";
         }
     }
 
